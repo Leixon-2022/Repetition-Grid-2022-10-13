@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: gray;
+  height: 150px;
+}
+
+.grid {
+  display: grid;
+  /* 6 kolumner / 1fraction st - 1/6 var/per kolumn */
+  grid-template-columns: repeat(1, 1fr);
+  /*  */
+  grid-template-rows: auto 300px;
+  gap: 12px;
+  max-width: 400px;
+  align-self: center;
+}
+
+/* Vi låtsas att detta är 9 cards - 3 rader / 3st per rad */
+.grid-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px 4px;
+  background-color: antiquewhite;
+}
+
+/* Vi låtsas att detta är 2 cards */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: cadetblue;
+  gap: 4px;
+}
+
+
+.row-1 {
+  background-color: brown;
+}
+
+.row-2 {
+  background-color: rgb(207, 48, 175);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+}
+
+.card h1 {
+  color: brown;
+  font-size: medium;
+  margin: 0;
+}
+
+.card p {
+  color: darkgreen;
+  font-size: small;
+  margin: 0;
+}
+
+.card a {
+  font-size: 8px;
+}
+
+/* Vi låtsas att detta är footer */
+.footer {
+  display: flex;
+  background-color: blue;
+  width: 100%;
+}
